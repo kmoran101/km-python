@@ -1,5 +1,5 @@
 import winsound
-
+import time
 
 def dit():
 	winsound.Beep(880, 200)
@@ -42,7 +42,7 @@ def g():
 	dash()
 	dit()
 
-def h()
+def h():
 	dit()
 	dit()
 	dit()
@@ -140,16 +140,72 @@ def z():
 	dash()
 	dit()
 
-
-a()
-b()
-c()
+def spc():
+	time.sleep(4)
 
 
+def transmitl(letter):
+	if letter == 'a':
+		a()
+	elif letter == 'b':
+		b()
+	elif letter == 'c':
+		c()
+	elif letter == 'd':
+		d()
+	elif letter == 'e':
+		e()
+	elif letter == 'f':
+		f()
+	elif letter == 'g':
+		g()
+	elif letter == 'h':
+		h()
+	elif letter == 'i':
+		i()
+	elif letter == 'j':
+		j()
+	elif letter == 'k':
+		k()
+	elif letter == 'l':
+		l()
+	elif letter == 'm':
+		m()
+	elif letter == 'n':
+		n()
+	elif letter == 'o':
+		o()
+	elif letter == 'p':
+		p()
+	elif letter == 'q':
+		q()
+	elif letter == 'r':
+		r()
+	elif letter == 's':
+		s()
+	elif letter == 't':
+		t()
+	elif letter == 'u':
+		u()
+	elif letter == 'v':
+		v()
+	elif letter == 'w':
+		w()
+	elif letter == 'x':
+		x()
+	elif letter == 'y':
+		y()
+	elif letter == 'z':
+		z()
+	elif letter == ' ':
+		spc()
+	else: 
+		print("ERROR WILL ROBINSON")
 
 
-
-
-
-
-
+def transmitm(mesg):
+	mesg = mesg.lower()
+	print(mesg)
+	for x in mesg:
+		transmitl(x)
+		time.sleep(2)
