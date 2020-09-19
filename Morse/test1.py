@@ -2,9 +2,9 @@ import Morse
 
 #Morse.transmit("a")
 
-mesg = "alpha beta"
+mesg = input("Enter text to output in Morse Code:")
 
-
+print("You entered " + mesg)
 
 
 Morse.transmitm(mesg)
