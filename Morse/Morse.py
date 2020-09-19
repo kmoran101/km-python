@@ -3,9 +3,11 @@ import time
 
 def dit():
 	winsound.Beep(880, 200)
+	time.sleep(.2)
 
 def dash():
-	winsound.Beep(880, 800)
+	winsound.Beep(880, 600)
+	time.sleep(.2)
 
 def a():
 	dit()
@@ -141,7 +143,7 @@ def z():
 	dit()
 
 def spc():
-	time.sleep(4)
+	time.sleep(1.4)
 
 
 def transmitl(letter):
@@ -205,7 +207,6 @@ def transmitl(letter):
 
 def transmitm(mesg):
 	mesg = mesg.lower()
-	print(mesg)
 	for x in mesg:
 		transmitl(x)
-		time.sleep(2)
+		time.sleep(.6)
